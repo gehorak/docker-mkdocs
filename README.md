@@ -1,2 +1,2 @@
 # mkdocs
-Docker container for running mkdocs documentation static site generator.
+Docker container for building and serving [mkdocs](https://www.mkdocs.org/) documentation static page site generator.
