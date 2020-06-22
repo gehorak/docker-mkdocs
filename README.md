@@ -40,7 +40,7 @@ docker run --rm -it -p 8000:8000 -v ${PWD}:/mkdocs gehorak/mkdocs
 ### Build documentation
 
 ```{bash}
-docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
+docker run --rm -it -v ${PWD}:/mkdocs gehorak/mkdocs build
 ```
 
 ## Provided interface of services
