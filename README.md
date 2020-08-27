@@ -31,16 +31,30 @@ docker build -t gehorak/mkdocs .
 
 ## Usage
 
+Getting started is super easy with [MkDocs Getting Started](https://www.mkdocs.org/#getting-started).
+
+### Help
+
+```{bash}
+docker run --rm -it gehorak/mkdocs -h
+```
+
+### Create new project
+
+```{bash}
+docker run --rm -it -v "my_path":/mkdocs gehorak/mkdocs new "my-project-name"
+```
+
 ### Start built-in dev-server
 
 ```{bash}
-docker run --rm -it -p 8000:8000 -v ${PWD}:/mkdocs gehorak/mkdocs
+docker run --rm -it -p 8000:8000 -v "!!my_project_path":/mkdocs gehorak/mkdocs serve -a 0.0.0.0:8000
 ```
 
-### Build documentation
+### Build static pages with theme
 
 ```{bash}
-docker run --rm -it -v ${PWD}:/mkdocs gehorak/mkdocs build
+docker run --rm -it -v "!!my_project_path":/mkdocs gehorak/mkdocs build
 ```
 
 ## Provided interface of services
