@@ -1,7 +1,21 @@
 # To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
-mkdocs
-mkdocs-material
-mkdocs-minify-plugin
+
+# MkDocs Plugins page 
+# <https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins>
+
+# Plugins
+mkdocs-minify-plugin #<github.com/byrnereese/mkdocs-minify-plugin>
+mkdocs-redirects #<https://github.com/datarobot/mkdocs-redirects>
 mkdocs-git-revision-date-localized-plugin
 mkdocs-awesome-pages-plugin
+
+# MkDocs Material Theme
+mkdocs-material
+
+# MkDocs Material Theme requirements
+mkdocs>=1.1
+Pygments>=2.4
+markdown>=3.2
 markdown-include
+pymdown-extensions>=7.0
+mkdocs-material-extensions>=1.0
